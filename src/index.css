@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #ede9da;
+    color: #1b242f;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: #ede9da;
+    color: #1b242f;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Flowing topographic contour arcs + subtle directional RVS sheen (no square grids) */
+.hero-contour-bg {
+  background-color: #1b242f;
+  background-image:
+    radial-gradient(ellipse 65% 55% at 88% 14%, rgba(124, 2, 1, 0.34), transparent 70%),
+    radial-gradient(ellipse 50% 45% at 12% 88%, rgba(250, 174, 83, 0.11), transparent 70%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='600' viewBox='0 0 900 600' fill='none'%3E%3Cpath d='M-60 480 C 180 340, 380 560, 620 390 C 780 280, 860 120, 980 80' stroke='rgba(250,174,83,0.10)' stroke-width='1.2'/%3E%3Cpath d='M-60 530 C 200 390, 410 600, 660 430 C 810 320, 880 170, 980 130' stroke='rgba(255,255,255,0.05)' stroke-width='1'/%3E%3Cpath d='M-40 120 C 160 220, 340 40, 560 160 C 740 260, 820 420, 960 460' stroke='rgba(255,255,255,0.045)' stroke-width='1'/%3E%3Ccircle cx='740' cy='160' r='220' stroke='rgba(250,174,83,0.06)' stroke-width='1' stroke-dasharray='6 8'/%3E%3C/svg%3E");
+  background-size: cover, cover, cover;
+  background-position: center;
+}
+
+/* Warm parchment editorial surface with soft radial depth & diagonal micro-weave */
+.cream-canvas-bg {
+  background-color: #ede9da;
+  background-image:
+    radial-gradient(ellipse 70% 50% at 15% 10%, rgba(255, 255, 255, 0.55), transparent 65%),
+    radial-gradient(ellipse 60% 50% at 85% 90%, rgba(250, 174, 83, 0.14), transparent 65%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(27, 36, 47, 0.018) 0px,
+      rgba(27, 36, 47, 0.018) 1px,
+      transparent 1px,
+      transparent 22px
+    );
+}
+
+/* Deep RVS Maroon CTA band with sweeping curved arc ribbons */
+.maroon-wave-bg {
+  background-color: #7c0201;
+  background-image:
+    linear-gradient(125deg, #5c0101 0%, #7c0201 52%, #940b0a 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='400' viewBox='0 0 1200 400' fill='none'%3E%3Cpath d='M-80 340 Q 320 120 680 280 T 1280 120' stroke='rgba(250,174,83,0.18)' stroke-width='1.5'/%3E%3Cpath d='M-80 390 Q 360 170 720 330 T 1280 170' stroke='rgba(255,255,255,0.08)' stroke-width='1'/%3E%3C/svg%3E");
+  background-size: cover, cover;
+  background-position: center;
+}
+
+/* Fine console stipple for secret CMS login */
+.console-dots-bg {
+  background-image: radial-gradient(rgba(250, 174, 83, 0.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ede9da;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c0201;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5c0101;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

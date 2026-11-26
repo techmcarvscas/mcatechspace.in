@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-11-26",
+  "apps": [
+    {
+      "id": "com-ram-healthtracker",
+      "name": "Health Tracker",
+      "tagline": "Track daily wellness, habits, and vitals in one place.",
+      "shortDescription": "A clean, distraction-free personal wellness companion designed to help you log daily health routines, stay consistent with fitness goals, and monitor everyday well-being.",
+      "description": "",
+      "icon": "/apps/icons/health-tracker.jpg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.ram.healthtracker",
+      "category": "Lifestyle",
+      "platform": ["Android"],
+      "status": "published",
+      "featured": true,
+      "releaseDate": "",
+      "version": "",
+      "technologies": [],
+      "features": [],
+      "screenshots": [],
+      "developer": "",
+      "badge": "",
+      "displayOrder": 1
+    },
+    {
+      "id": "com-aravinth-calcpro",
+      "name": "Calc Pro",
+      "tagline": "Fast, precision arithmetic in a sleek dark interface.",
+      "shortDescription": "A focused everyday calculator crafted for quick, reliable calculations with high-contrast controls, crisp typography, and effortless single-hand usability.",
+      "description": "",
+      "icon": "/apps/icons/calc-pro.jpg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.aravinth.calcpro",
+      "category": "Utility",
+      "platform": ["Android"],
+      "status": "published",
+      "featured": false,
+      "releaseDate": "",
+      "version": "",
+      "technologies": [],
+      "features": [],
+      "screenshots": [],
+      "developer": "",
+      "badge": "",
+      "displayOrder": 2
+    }
+  ]
+}

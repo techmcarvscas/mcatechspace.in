@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "brandName": "Dept of MCA",
+  "alternateName": "MCA APPVERSE",
+  "tagline": "WE BUILD IDEAS INTO APPLICATIONS.",
+  "institutionName": "RVS College of Arts and Science",
+  "schoolName": "School of Computer Studies",
+  "departmentName": "Master of Computer Applications (MCA)",
+  "departmentBadge": "SCHOOL OF COMPUTER STUDIES · MCA",
+  "seo": {
+    "title": "MCA Digital Lab | RVS College of Arts and Science",
+    "description": "Explore Android applications developed by the Master of Computer Applications community at RVS College of Arts and Science, School of Computer Studies.",
+    "canonicalUrl": ""
+  },
+  "hero": {
+    "headlineLines": ["CAMPUS CODE.", "ENGINEERED", "FOR THE WORLD."],
+    "description": "A student-led initiative by the Master of Computer Applications (MCA) students at RVS College of Arts and Science, turning innovative ideas into real-world Android applications on Google Play Store.",
+    "primaryCtaLabel": "Explore Our Apps",
+    "secondaryCtaLabel": "About Our Lab"
+  },
+  "about": {
+    "headlineLines": ["LEARNING IS THE START.", "BUILDING IS THE NEXT STEP."],
+    "description": "Driven by MCA students, this initiative bridges academic foundations with real-world mobile engineering—taking every application from ideation and UI/UX design through development, testing, and Google Play deployment."
+  },
+  "finalCta": {
+    "headline": "THE NEXT IDEA COULD BE YOURS.",
+    "description": "Explore the Android applications built through this MCA student initiative. More ideas, builds, and Play Store launches coming soon.",
+    "ctaLabel": "EXPLORE APPLICATIONS"
+  },
+  "features": {
+    "showCategories": true,
+    "showFeaturedSection": true,
+    "showReleasesSection": true,
+    "showLabProcessSection": true
+  },
+  "theme": {
+    "accentColor": "#7C0201",
+    "secondaryAccent": "#FAAE53"
+  },
+  "footer": {
+    "copyright": "RVS College of Arts and Science · School of Computer Studies · MCA Digital Lab",
+    "socialLinks": []
+  }
+}

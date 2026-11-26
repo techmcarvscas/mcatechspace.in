@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 760" fill="none">
+  <rect width="400" height="760" rx="32" fill="#0E1015"/>
+  <rect x="24" y="36" width="352" height="60" rx="16" fill="#14171F" stroke="#232834"/>
+  <circle cx="58" cy="66" r="14" fill="#C8FF2E" fill-opacity="0.2" stroke="#C8FF2E"/>
+  <rect x="86" y="56" width="160" height="10" rx="5" fill="#F4F5F7"/>
+  <rect x="86" y="72" width="96" height="6" rx="3" fill="#6B7280"/>
+  <rect x="24" y="120" width="352" height="190" rx="20" fill="#14171F" stroke="#232834"/>
+  <rect x="48" y="148" width="140" height="14" rx="7" fill="#C8FF2E"/>
+  <rect x="48" y="176" width="280" height="10" rx="5" fill="#9CA3AF"/>
+  <rect x="48" y="196" width="220" height="10" rx="5" fill="#6B7280"/>
+  <rect x="48" y="236" width="120" height="40" rx="12" fill="#C8FF2E"/>
+  <rect x="24" y="334" width="166" height="150" rx="18" fill="#14171F" stroke="#232834"/>
+  <rect x="210" y="334" width="166" height="150" rx="18" fill="#14171F" stroke="#232834"/>
+  <rect x="24" y="508" width="352" height="180" rx="20" fill="#14171F" stroke="#232834"/>
+  <text x="200" y="610" text-anchor="middle" fill="#6B7280" font-family="monospace" font-size="16">DEMO PREVIEW SCREEN</text>
+</svg>
+
