@@ -40,6 +40,7 @@ export default {
         serif: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
         mono: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        college: ['"Clearly"', 'Georgia', 'serif'],
       },
     },
   },

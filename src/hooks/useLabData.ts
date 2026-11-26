@@ -73,7 +73,11 @@ export function useLabData() {
       ])) as [SiteConfig, AppsDataFile, ReleasesDataFile];
 
       const localDraftApps = loadDraftApps();
-      const localDraftConfig = loadDraftSiteConfig();
+      const rawDraftConfig = loadDraftSiteConfig();
+      const localDraftConfig =
+        rawDraftConfig && /^dept\.?\s*of\s*mca$/i.test(rawDraftConfig.brandName?.trim() ?? '')
+          ? { ...rawDraftConfig, brandName: 'Department of MCA' }
+          : rawDraftConfig;
       const localDraftReleases = loadDraftReleases();
 
       const hasLocalDraft = Boolean(localDraftApps || localDraftConfig || localDraftReleases);

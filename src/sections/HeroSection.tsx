@@ -13,7 +13,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config, publishedApps 
   return (
     <section
       id="home"
-      className="relative min-h-[100svh] flex flex-col justify-between pt-[64px] sm:pt-[70px] hero-contour-bg text-white border-b-4 border-rvsgold overflow-hidden"
+      className="relative min-h-[100svh] flex flex-col justify-between pt-[80px] sm:pt-[90px] hero-contour-bg text-white border-b-4 border-rvsgold overflow-hidden"
     >
       <div className="relative z-10 flex-1 flex items-center mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center w-full">

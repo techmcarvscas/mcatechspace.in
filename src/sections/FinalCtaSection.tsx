@@ -14,6 +14,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ config }) => {
     offset: ['start end', 'end start'],
   });
   const watermarkX = useTransform(scrollYProgress, [0, 1], ['-2%', '3%']);
+  const shortDeptLabel = (config.brandName || 'Dept of MCA').replace(/\bDepartment\b/i, 'Dept');
 
   return (
     <section
@@ -27,7 +28,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ config }) => {
         className="pointer-events-none absolute inset-0 flex items-center justify-center px-4 opacity-[0.06] select-none"
       >
         <span className="font-display text-[clamp(2.25rem,7vw,5.75rem)] font-extrabold uppercase tracking-[0.12em] text-white whitespace-nowrap">
-          {config.brandName} · RVS CAS · MCA
+          {shortDeptLabel} · RVS CAS · MCA
         </span>
       </motion.div>
 
@@ -41,7 +42,7 @@ export const FinalCtaSection: React.FC<FinalCtaSectionProps> = ({ config }) => {
         >
           <div className="max-w-2xl space-y-3">
             <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-rvsgold">
-              {config.brandName} · {config.schoolName}
+              {shortDeptLabel} · {config.schoolName}
             </span>
             <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white leading-[1.06]">
               {config.finalCta.headline}
