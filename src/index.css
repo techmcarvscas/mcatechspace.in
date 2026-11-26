@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @font-face {
   font-family: 'Clearly';
@@ -15,13 +15,20 @@
     background-color: #ede9da;
     color: #1b242f;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    scroll-padding-top: 73px;
+  }
+
+  @media (min-width: 640px) {
+    html {
+      scroll-padding-top: 85px;
+    }
   }
 
   body {
     background-color: #ede9da;
     color: #1b242f;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 }
 
