@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-26",
+  "lastUpdated": "2026-11-27",
   "apps": [
     {
       "id": "com-ram-healthtracker",
@@ -43,6 +43,69 @@
       "developer": "",
       "badge": "",
       "displayOrder": 2
+    },
+    {
+      "id": "com-gunachandru-pockettrack",
+      "name": "PocketTrack",
+      "tagline": "Track expenses, budgets, and daily spending effortlessly.",
+      "shortDescription": "A sleek personal finance and wallet companion built to record everyday expenses, monitor spending patterns, and keep monthly budgets organized.",
+      "description": "",
+      "icon": "/apps/icons/pocket-track.jpg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gunachandru.pockettrack",
+      "category": "Finance",
+      "platform": ["Android"],
+      "status": "published",
+      "featured": false,
+      "releaseDate": "",
+      "version": "",
+      "technologies": [],
+      "features": [],
+      "screenshots": [],
+      "developer": "",
+      "badge": "",
+      "displayOrder": 3
+    },
+    {
+      "id": "com-eventapp-gatherly",
+      "name": "Gatherly",
+      "tagline": "Plan events, manage schedules, and coordinate gatherings.",
+      "shortDescription": "An event management companion crafted to organize event calendars, coordinate passes and schedules, and simplify group gatherings seamlessly.",
+      "description": "",
+      "icon": "/apps/icons/gatherly.jpg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.eventapp.gatherly",
+      "category": "Productivity",
+      "platform": ["Android"],
+      "status": "published",
+      "featured": false,
+      "releaseDate": "",
+      "version": "",
+      "technologies": [],
+      "features": [],
+      "screenshots": [],
+      "developer": "",
+      "badge": "",
+      "displayOrder": 4
+    },
+    {
+      "id": "com-dhanyakannan-habitflow",
+      "name": "HabitFlow",
+      "tagline": "Build steady daily routines and nurture lasting habits.",
+      "shortDescription": "A calm habit-building companion designed to structure everyday routines, encourage steady consistency, and visualize continuous personal growth.",
+      "description": "",
+      "icon": "/apps/icons/habit-flow.jpg",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dhanyakannan.habitflow",
+      "category": "Lifestyle",
+      "platform": ["Android"],
+      "status": "published",
+      "featured": false,
+      "releaseDate": "",
+      "version": "",
+      "technologies": [],
+      "features": [],
+      "screenshots": [],
+      "developer": "",
+      "badge": "",
+      "displayOrder": 5
     }
   ]
 }

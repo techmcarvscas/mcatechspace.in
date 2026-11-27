@@ -6,6 +6,8 @@ import { isCmsSessionActive, setCmsSessionActive } from './utils/storage';
 import { ScrollProgress } from './components/ScrollProgress';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './sections/HeroSection';
+import { AboutDepartmentSection } from './sections/AboutDepartmentSection';
+import { VisionMissionSection } from './sections/VisionMissionSection';
 import { FeaturedAppSection } from './sections/FeaturedAppSection';
 import { AppDirectorySection } from './sections/AppDirectorySection';
 import { LabProcessSection } from './sections/LabProcessSection';
@@ -137,6 +139,10 @@ export function App() {
 
               <main>
                 <HeroSection config={activeConfig} publishedApps={publishedApps} />
+
+                <AboutDepartmentSection config={activeConfig} />
+
+                <VisionMissionSection config={activeConfig} />
 
                 {activeConfig.features.showFeaturedSection && featuredApps.length > 0 && (
                   <FeaturedAppSection featuredApps={featuredApps} />

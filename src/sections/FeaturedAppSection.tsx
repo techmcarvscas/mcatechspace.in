@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowUpRight, Award, CheckCircle2, Layers, ShieldCheck, Smartphone } from 'lucide-react';
+import { Award, CheckCircle2, Layers, ShieldCheck, Smartphone } from 'lucide-react';
 import { AppEntry } from '../types';
 import { AppIconGraphic } from '../components/AppCard';
+import { GooglePlayBadge } from '../components/GooglePlayBadge';
 import { isValidHttpUrl } from '../utils/validation';
 
 interface FeaturedAppSectionProps {
@@ -161,15 +162,7 @@ export const FeaturedAppSection: React.FC<FeaturedAppSectionProps> = ({
 
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   {hasValidUrl && (
-                    <a
-                      href={activeApp.playStoreUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group inline-flex items-center gap-2 rounded-md bg-rvsgold px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-rvsslate hover:bg-rvsgold-dim transition-colors"
-                    >
-                      <span>VIEW ON PLAY STORE</span>
-                      <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </a>
+                    <GooglePlayBadge href={activeApp.playStoreUrl} appName={activeApp.name} />
                   )}
                 </div>
               </div>

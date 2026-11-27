@@ -15,12 +15,18 @@
     background-color: #ede9da;
     color: #1b242f;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-    scroll-padding-top: 73px;
+    scroll-padding-top: 65px;
   }
 
   @media (min-width: 640px) {
     html {
-      scroll-padding-top: 85px;
+      scroll-padding-top: 73px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    html {
+      scroll-padding-top: 81px;
     }
   }
 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Smartphone } from 'lucide-react';
+import { Smartphone } from 'lucide-react';
 import { AppEntry } from '../types';
+import { GooglePlayBadge } from './GooglePlayBadge';
 import { isValidHttpUrl } from '../utils/validation';
 
 interface AppCardProps {
@@ -97,10 +98,6 @@ export const AppCard: React.FC<AppCardProps> = ({
           <span className="absolute top-3.5 left-4 rounded bg-black/35 backdrop-blur-sm border border-white/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-rvsgold">
             {app.category}
           </span>
-
-          <span className="absolute top-3.5 right-4 text-[11px] font-bold text-white/50 tabular-nums">
-            #{String(index + 1).padStart(2, '0')}
-          </span>
         </div>
       )}
 
@@ -155,23 +152,10 @@ export const AppCard: React.FC<AppCardProps> = ({
             {app.shortDescription || app.description}
           </p>
 
-          {(app.platform?.length > 0 ||
-            app.version ||
+          {(app.version ||
             app.releaseDate ||
             (app.technologies && app.technologies.length > 0)) && (
             <div className="mt-4 flex flex-wrap items-center gap-2">
-              {app.platform?.map((p) => (
-                <span
-                  key={p}
-                  className={`rounded border px-2.5 py-0.5 text-[11px] font-semibold ${
-                    darkSurface
-                      ? 'border-white/15 bg-obsidian text-zinc-200'
-                      : 'border-rvsslate/15 bg-rvscream-soft text-rvsslate'
-                  }`}
-                >
-                  {p}
-                </span>
-              ))}
               {app.version && (
                 <span
                   className={`rounded border px-2 py-0.5 text-[11px] ${
@@ -223,25 +207,14 @@ export const AppCard: React.FC<AppCardProps> = ({
           )}
         </div>
 
-        <div
-          className={`relative z-10 flex flex-wrap items-center gap-2.5 mt-5 pt-4 border-t ${
-            darkSurface ? 'border-white/10' : 'border-rvsslate/10'
-          }`}
-        >
+        <div className="relative z-10 flex flex-wrap items-center gap-2.5 mt-4 pt-1">
           {hasValidUrl && (
-            <a
+            <GooglePlayBadge
               href={app.playStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`group/btn flex-1 inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-xs font-bold uppercase tracking-[0.08em] transition-colors focus:outline-none focus-visible:ring-2 ${
-                darkSurface
-                  ? 'bg-rvsgold text-rvsslate hover:bg-rvsgold-dim focus-visible:ring-white'
-                  : 'bg-rvsmaroon text-white hover:bg-rvsmaroon-dark focus-visible:ring-rvsgold'
-              }`}
-            >
-              <span>VIEW ON PLAY STORE</span>
-              <ArrowUpRight className="w-4 h-4 shrink-0 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-            </a>
+              appName={app.name}
+              size="sm"
+              className="w-full justify-center"
+            />
           )}
         </div>
       </div>

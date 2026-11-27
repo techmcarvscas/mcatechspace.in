@@ -74,6 +74,17 @@ export interface SiteConfig {
     headlineLines: string[];
     description: string;
   };
+  department?: {
+    heading: string;
+    subheading?: string;
+    description: string;
+    extendedDescription?: string;
+    ctaLabel?: string;
+    vision: string;
+    visionDetail?: string;
+    mission: string;
+    missionCommitments?: string[];
+  };
   finalCta: {
     headline: string;
     description: string;

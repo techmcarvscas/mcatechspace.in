@@ -22,13 +22,13 @@ export const LogoMark: React.FC<LogoMarkProps> = ({
   const isLight = variant === 'light';
   const sizeClasses =
     logoSize === 'lg'
-      ? 'h-14 w-14 sm:h-[68px] sm:w-[68px]'
+      ? 'h-12 w-12 sm:h-14 sm:w-14 xl:h-[64px] xl:w-[64px]'
       : 'h-11 w-11 sm:h-12 sm:w-12';
 
   const logoSrc = isLight ? rvsLogo : rvsLogoWhite;
 
   return (
-    <div className="inline-flex items-center gap-3 sm:gap-4 select-none">
+    <div className="inline-flex items-center gap-3 sm:gap-3.5 select-none">
       <img
         src={logoSrc}
         alt="RVS College of Arts and Science logo"
@@ -39,7 +39,7 @@ export const LogoMark: React.FC<LogoMarkProps> = ({
           style={collegeTitle ? { fontFamily: "'Clearly', Georgia, serif" } : undefined}
           className={
             collegeTitle
-              ? `font-college font-normal text-lg sm:text-[26px] lg:text-[30px] leading-tight tracking-normal antialiased ${
+              ? `font-college font-normal text-base sm:text-[21px] lg:text-[22px] xl:text-[26px] 2xl:text-[28px] leading-tight tracking-normal antialiased sm:whitespace-nowrap ${
                   isLight ? 'text-rvsmaroon' : 'text-white'
                 }`
               : `font-display text-sm sm:text-base font-bold tracking-[0.03em] ${
@@ -53,7 +53,7 @@ export const LogoMark: React.FC<LogoMarkProps> = ({
           <span
             className={`${
               collegeTitle
-                ? 'mt-0.5 text-sm sm:text-base lg:text-[17px] font-bold tracking-[0.02em] antialiased'
+                ? 'mt-0.5 text-xs sm:text-sm xl:text-base font-bold tracking-[0.02em] antialiased whitespace-nowrap'
                 : 'mt-1 text-[10px] sm:text-xs font-semibold tracking-[0.04em]'
             } ${
               isLight

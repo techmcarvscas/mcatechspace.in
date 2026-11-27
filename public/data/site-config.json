@@ -13,14 +13,35 @@
     "canonicalUrl": ""
   },
   "hero": {
-    "headlineLines": ["CAMPUS CODE.", "ENGINEERED", "FOR THE WORLD."],
+    "headlineLines": [
+      "CAMPUS CODE.",
+      "ENGINEERED",
+      "FOR THE WORLD."
+    ],
     "description": "A student-led initiative by the Master of Computer Applications (MCA) students at RVS College of Arts and Science, turning innovative ideas into real-world Android applications on Google Play Store.",
     "primaryCtaLabel": "Explore Our Apps",
     "secondaryCtaLabel": "About Our Lab"
   },
   "about": {
-    "headlineLines": ["LEARNING IS THE START.", "BUILDING IS THE NEXT STEP."],
+    "headlineLines": [
+      "LEARNING IS THE START.",
+      "BUILDING IS THE NEXT STEP."
+    ],
     "description": "Driven by MCA students, this initiative bridges academic foundations with real-world mobile engineering—taking every application from ideation and UI/UX design through development, testing, and Google Play deployment."
+  },
+  "department": {
+    "heading": "About Our Department",
+    "subheading": "Specialized in MERN Stack Web & Mobile Application Development",
+    "description": "Master of Computer Applications under the School of Computer Studies at RVS College of Arts and Science—built on a modern industry-focused curriculum.",
+    "extendedDescription": "Combining MongoDB, Express.js, React, Node.js, and native Android/cross-platform mobile frameworks with strong computer science fundamentals, learners transform classroom theory into scalable web platforms and production-ready applications.",
+    "vision": "Quality Education for Digital Era.",
+    "visionDetail": "To advance the School of Computer Studies and the Department of MCA as a premier center of excellence in MERN stack web architecture, mobile application development, and applied computing innovation.",
+    "mission": "To impart a need-based quality education through a comprehensive curriculum by adopting apt technologies and progressive teaching, learning, and research processes.",
+    "missionCommitments": [
+      "Industry-aligned MCA syllabus grounded in the MERN Stack (MongoDB, Express.js, React, Node.js) and mobile application development.",
+      "Project-driven studio training connecting RESTful backend architectures with responsive web and Android client experiences.",
+      "Disciplined development practices emphasizing software architecture, usability testing, and live Google Play deployment."
+    ]
   },
   "finalCta": {
     "headline": "THE NEXT IDEA COULD BE YOURS.",

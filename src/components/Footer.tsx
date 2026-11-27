@@ -45,6 +45,16 @@ export const Footer: React.FC<FooterProps> = ({ config, hasReleases, onOpenLegal
                 </a>
               </li>
               <li>
+                <a href="#department" className="hover:text-rvsgold transition-colors">
+                  About Department
+                </a>
+              </li>
+              <li>
+                <a href="#vision-mission" className="hover:text-rvsgold transition-colors">
+                  Vision &amp; Mission
+                </a>
+              </li>
+              <li>
                 <a href="#apps" className="hover:text-rvsgold transition-colors">
                   Applications
                 </a>

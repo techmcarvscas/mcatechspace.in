@@ -1,9 +1,10 @@
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ArrowUpRight, Layers, Play, Search, Smartphone } from 'lucide-react';
+import { Layers, Search, Smartphone } from 'lucide-react';
 import { AppEntry } from '../types';
 import { AppIconGraphic } from '../components/AppCard';
 import { EmptyAppsState } from '../components/EmptyAppsState';
+import { GooglePlayBadge } from '../components/GooglePlayBadge';
 import { isValidHttpUrl } from '../utils/validation';
 
 interface AppDirectorySectionProps {
@@ -218,11 +219,6 @@ export const AppDirectorySection: React.FC<AppDirectorySectionProps> = ({
                             />
                           </motion.div>
                         </div>
-
-                        <span className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-white border border-rvsslate/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-rvsslate">
-                          <Play className="w-2.5 h-2.5 text-rvsmaroon fill-current shrink-0" />
-                          <span>Available on Google Play</span>
-                        </span>
                       </div>
 
                       {/* Editorial App Copy & Play Store Action */}
@@ -232,29 +228,20 @@ export const AppDirectorySection: React.FC<AppDirectorySectionProps> = ({
                         }`}
                       >
                         <div className="space-y-4">
-                          <div className="flex flex-wrap items-center gap-2">
-                            <span className="text-xs font-bold uppercase tracking-widest text-rvsmaroon">
-                              App #{String(index + 1).padStart(2, '0')}
-                            </span>
-                            {app.badge && (
-                              <span className="rounded bg-rvsgold px-2.5 py-0.5 text-[10px] font-bold uppercase text-rvsslate">
-                                {app.badge}
-                              </span>
-                            )}
-                            {app.platform?.map((p) => (
-                              <span
-                                key={p}
-                                className="rounded border border-rvsslate/15 bg-rvscream-soft px-2.5 py-0.5 text-[11px] font-semibold text-rvsslate"
-                              >
-                                {p}
-                              </span>
-                            ))}
-                            {app.version && (
-                              <span className="rounded border border-rvsslate/15 bg-rvscream-soft px-2.5 py-0.5 text-[11px] text-zinc-600">
-                                v{app.version.replace(/^v/i, '')}
-                              </span>
-                            )}
-                          </div>
+                          {(app.badge || app.version) && (
+                            <div className="flex flex-wrap items-center gap-2">
+                              {app.badge && (
+                                <span className="rounded bg-rvsgold px-2.5 py-0.5 text-[10px] font-bold uppercase text-rvsslate">
+                                  {app.badge}
+                                </span>
+                              )}
+                              {app.version && (
+                                <span className="rounded border border-rvsslate/15 bg-rvscream-soft px-2.5 py-0.5 text-[11px] text-zinc-600">
+                                  v{app.version.replace(/^v/i, '')}
+                                </span>
+                              )}
+                            </div>
+                          )}
 
                           <div>
                             <h3 className="font-display text-2xl sm:text-3xl font-bold text-rvsslate">
@@ -290,17 +277,12 @@ export const AppDirectorySection: React.FC<AppDirectorySectionProps> = ({
                           )}
                         </div>
 
-                        <div className="pt-4 border-t border-rvsslate/10 flex flex-wrap items-center justify-between gap-4">
+                        <div className="pt-1 flex flex-wrap items-center justify-between gap-4">
                           {hasValidUrl && (
-                            <a
+                            <GooglePlayBadge
                               href={app.playStoreUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="group/btn inline-flex items-center gap-2.5 rounded-lg bg-rvsmaroon px-6 py-3 text-xs font-bold uppercase tracking-[0.08em] text-white hover:bg-rvsmaroon-dark transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-rvsgold"
-                            >
-                              <span>VIEW ON PLAY STORE</span>
-                              <ArrowUpRight className="w-4 h-4 text-rvsgold transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                            </a>
+                              appName={app.name}
+                            />
                           )}
 
                           {app.releaseDate && (
